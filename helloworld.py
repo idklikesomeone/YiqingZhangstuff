@@ -1,7 +1,7 @@
 print(" ------------------------------------------------")
 print("|                                                |")
 print("|    01HelloWorld                                |")
-print("|    Name : Yiqing                              |")
+print("|    Name : Yiqing                               |")
 print("|    Version : 01                                |")
 print("|                                                |")
 print(" ------------------------------------------------")
