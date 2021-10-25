@@ -8,7 +8,7 @@ print("|    Version : 01                                |")
 print("|                                                |")
 print(" ------------------------------------------------")
 
-teachername = input("Teacher's name (try Mr Horan)")
+teachername = input("Teacher's name (try Mr Horan) ")
 if teachername =="Mr Horan":
     print("You are lucky, he is a great teacher.") 
 else:
