@@ -1,16 +1,23 @@
-
-
 print(" ------------------------------------------------")
 print("|                                                |")
-print("|    04GoodTeacher                               |")
+print("|    06whileLoop                                 |")
 print("|    Name : Yiqing                               |")
 print("|    Version : 01                                |")
 print("|                                                |")
 print(" ------------------------------------------------")
 
-teachername = input("Teacher's name (try Mr Horan) ")
-if teachername =="Mr Horan":
-    print("You are lucky, he is a great teacher.") 
-else:
-    print(teachername, "is an ok teacher")
+userguess = 0
+correctanswer = "IST"
+
+while correctanswer != userguess:
+    userguess = input("What is the name of this subject ")
+    if correctanswer != userguess:
+        print("Not Correct - try again")
+      
+
+print()
+print()
+print(" Congratulations!!")
+print()
+print()
 
