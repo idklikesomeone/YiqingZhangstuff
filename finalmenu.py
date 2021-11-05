@@ -242,12 +242,12 @@ def encodestringfunction():
     print("---Start of Output ---------------------------")
     print()
     userinput = input("What is your string? ")
-    encode = ""
+    ascii = ""
     for character in userinput:
-      encode_character = chr(ord(character)+1)
-      print(character, "=", encode_character, sep='')
-      encode += encode_character
-      print(encode)
+      ascii_character = chr(ord(character)+1)
+      print(character, "=", ascii_character, sep='')
+      ascii += ascii_character
+      print(ascii)
     print()
     print("----End of Output -----------------------------")
     print()
