@@ -19,6 +19,7 @@ def mainmenufunction():
    print("8. Convert to ascii")
    print("9. Encode a string")
    print("x. To Exit")
+
    optionnumber = input("Enter an option ")
    if optionnumber == "1":
        helloworldfunction()
@@ -37,7 +38,7 @@ def mainmenufunction():
    elif optionnumber =="8":
        convertfunction()
    elif optionnumber =="9":
-      stringloopfunction()
+      encodestringfunction()
    elif optionnumber == "x":
        exitfunction()
    else:
@@ -52,6 +53,7 @@ def mainmenufunction():
        print()
        input("Press Enter to continue")
        mainmenufunction()
+
 def mainmenuotherfunction():
     print(" ------------------------------------------------")
     print("|                                                |")
@@ -71,6 +73,7 @@ def mainmenuotherfunction():
     print("8. Convert to ascii")
     print("9. Encode a string")
     print("x. To Exit") 
+
 def helloworldfunction():
     import os
     os.system('cls')
@@ -87,6 +90,7 @@ def helloworldfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
+
 def goodbyeworldfunction():
     import os
     os.system('cls')
@@ -105,6 +109,7 @@ def goodbyeworldfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
+
 def goodbyepersonfunction():
     import os
     os.system('cls')
@@ -123,6 +128,7 @@ def goodbyepersonfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
+
 def goodteacherfunction():
     import os
     os.system('cls')
@@ -143,6 +149,7 @@ def goodteacherfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
+
 def forloopfunction():
     import os
     os.system('cls')
@@ -160,6 +167,7 @@ def forloopfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
+
 def whileloopfunction():
     import os
     os.system('cls')
@@ -186,6 +194,7 @@ def whileloopfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
+
 def stringloopfunction():
     import os
     os.system('cls')
@@ -204,6 +213,7 @@ def stringloopfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
+
 def convertfunction():
     import os
     os.system('cls')
@@ -213,7 +223,8 @@ def convertfunction():
     print("---Start of Output ---------------------------")
     print()
     userinput = input("What is your string? ")
-    
+    for characters in userinput:
+     print(characters, "=", ord(characters)) 
     print()
     print("----End of Output -----------------------------")
     print()
@@ -221,6 +232,7 @@ def convertfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
+
 def encodestringfunction():
     import os
     os.system('cls')
@@ -229,7 +241,13 @@ def encodestringfunction():
     print()
     print("---Start of Output ---------------------------")
     print()
-    print("invalid option")
+    userinput = input("What is your string? ")
+    encode = ""
+    for character in userinput:
+      encode_character = chr(ord(character)+1)
+      print(character, "=", encode_character, sep='')
+      encode += encode_character
+      print(encode)
     print()
     print("----End of Output -----------------------------")
     print()
@@ -237,6 +255,7 @@ def encodestringfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
+
 def exitfunction():
     import os
     os.system('cls')
@@ -253,4 +272,5 @@ def exitfunction():
     input("Press Enter to continue")
     print()
     quit()
+    
 mainmenufunction()
