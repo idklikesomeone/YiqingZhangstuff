@@ -1,8 +1,6 @@
 def mainmenufunction():
-
    import os
    os.system('cls')
-
    print(" ------------------------------------------------")
    print("|                                                |")
    print("|    07Menu                                      |")
@@ -54,7 +52,6 @@ def mainmenufunction():
        print()
        input("Press Enter to continue")
        mainmenufunction()
-
 def mainmenuotherfunction():
     print(" ------------------------------------------------")
     print("|                                                |")
@@ -74,10 +71,7 @@ def mainmenuotherfunction():
     print("8. Convert to ascii")
     print("9. Encode a string")
     print("x. To Exit") 
-    
-
 def helloworldfunction():
-
     import os
     os.system('cls')
     mainmenuotherfunction()
@@ -93,7 +87,6 @@ def helloworldfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
-
 def goodbyeworldfunction():
     import os
     os.system('cls')
@@ -112,7 +105,6 @@ def goodbyeworldfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
-
 def goodbyepersonfunction():
     import os
     os.system('cls')
@@ -131,7 +123,6 @@ def goodbyepersonfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
-
 def goodteacherfunction():
     import os
     os.system('cls')
@@ -152,7 +143,6 @@ def goodteacherfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
-
 def forloopfunction():
     import os
     os.system('cls')
@@ -170,7 +160,6 @@ def forloopfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
-
 def whileloopfunction():
     import os
     os.system('cls')
@@ -179,15 +168,12 @@ def whileloopfunction():
     print()
     print("----Start of Output ---------------------------")
     print()
-
     userguess = 0
     correctanswer = "IST"
-
     while correctanswer != userguess:
         userguess = input("What is the name of this subject ")
         if correctanswer != userguess:
            print("Not Correct - try again")
-
     print()
     print()
     print(" Congratulations!!")
@@ -200,7 +186,6 @@ def whileloopfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
-
 def stringloopfunction():
     import os
     os.system('cls')
@@ -217,7 +202,6 @@ def stringloopfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
-
 def convertfunction():
     import os
     os.system('cls')
@@ -234,7 +218,6 @@ def convertfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
-
 def encodestringfunction():
     import os
     os.system('cls')
@@ -251,7 +234,6 @@ def encodestringfunction():
     print()
     input("Press Enter to continue")
     mainmenufunction()
-
 def exitfunction():
     import os
     os.system('cls')
@@ -268,20 +250,4 @@ def exitfunction():
     input("Press Enter to continue")
     print()
     quit()
-  
 mainmenufunction()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
